@@ -51,7 +51,6 @@ Developers can add tabs to trigger other tools, tests or actions like so:
 
 The time is ripe for in-browser webdevelopment:
 
-* more control over js includes (load analytics after first meaningful frame etc)
 * es6 is supported in current browsers 
 * chrome devtools allows serving gitrepositories locally using 'overrides'
 * javascript modules work in the browser
@@ -59,6 +58,7 @@ The time is ripe for in-browser webdevelopment:
 * code-splitting can be achieved using http-vue-loader and similar module-loaders
 * npm modules can be included directly in the browser using npm CDN's like unpkg.com
 * api responses can be easily mocked or requested remotely
+* respect first meaningful frame (lazyload analytics embedcodes etc)
 
 > It goes without saying that this doesn't apply for people who got emotionally or financially attached to their current tools & stacks.
 
