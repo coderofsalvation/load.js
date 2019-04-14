@@ -1,18 +1,18 @@
 Javascript bundler & code-splitter in the browser #microstack
 
-<img src="loadjs.png"/>
+<center><img src="https://github.com/coderofsalvation/load.js/raw/master/loadjs.png"/></center>
 
 ## Usage
 
-        <html lang="en" manifest="/app.manifest">
+        <html lang="en">
           <head>
-            <script src="/js/load.js"></script>
+            <script src="load.js"></script>
           </head>
           <body>
             <div id="app"></div>
             <script>
                 load([
-                    "/js/stylus.min.js",
+                    "http://stylus-lang.com/try/stylus.min.js",
                     "https://unpkg.com/vue@2.5.13/dist/vue.min.js",
                     "https://unpkg.com/vue-router@3.0.1/dist/vue-router.js",
                     "https://unpkg.com/http-vue-loader@1.3.4/src/httpVueLoader.js",
@@ -27,11 +27,19 @@ Javascript bundler & code-splitter in the browser #microstack
 > Now loading index.html will work as usual. Loading `index.html?dev`, will trigger the 
 bundler (or type `load.cmd('dev')` in the devtools console).
 
-<img src="screenshot.png"/>
+<img src="https://github.com/coderofsalvation/load.js/raw/master/screenshot.png"/>
 
 The second argument (`/js/bundle.js` hints loadjs that it can be bundled, resulting in 
 a tab on the right). 
 Loading the html-file without the `?flag` (or running `load.cmd('')`) will load the bundled-version instead of the individual files.
+
+## Install
+
+Just save [load.js](https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js) to a directory, or run:
+
+$ wget https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js
+
+And add a `index.html` like show above
 
 ## Extending 
 
@@ -41,4 +49,14 @@ Developers can add tabs to trigger other tools, tests or actions like so:
 
 ## Why
 
-It's time to reduce clutter (es6 + devtools with builtin webservers are here).
+The time is ripe for in-browser webdevelopment:
+
+* es6 is supported in current browsers 
+* chrome devtools allows serving gitrepositories locally using 'overrides'
+* javascript modules work in the browser
+* sass-like css syntax can run directly in the browser using [stylus](https://stylus-lang.com) .e.g 
+* code-splitting can be achieved using http-vue-loader and similar module-loaders
+* npm modules can be included directly in the browser using npm CDN's like unpkg.com
+* api responses can be easily mocked or requested remotely
+
+> It goes without saying that this doesn't apply for people who got emotionally or financially attached to their current tools & stacks.
