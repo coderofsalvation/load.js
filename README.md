@@ -29,8 +29,9 @@ bundler (or type `load.cmd('dev')` in the devtools console).
 
 <img src="screenshot.png"/>
 
-As you can see, the second argument ('/js/bundle.js' hints loadjs that it can be bundled, resulting in 
-a tab on the right)
+The second argument (`/js/bundle.js` hints loadjs that it can be bundled, resulting in 
+a tab on the right). 
+Loading the html-file without the `?flag` (or running `load.cmd('')`) will load the bundled-version instead of the individual files.
 
 ## Extending 
 
@@ -40,19 +41,4 @@ Developers can add tabs to trigger other tools, tests or actions like so:
 
 ## Why
 
-Loadjs can be seen like an microstack-alternative to frontend-stacks like nodejs+webpack.
-Browsers are shipped with state of the art devtools these days.
-Therefore frontend-developers can develop javascript applications, without installing nodejs / tools these days.
-
-## Workflow
-
-| node.js-way | browser-only way |
-|-|-|
-| installing node & using npm | surfing npmjs.com and using public CND's like https://unpkg.com |
-| bundling using webpack | load.js |
-| codesplitting using webpack | load.js |
-| vue-files + webpack | vuehttploader |
-
-> These are just examples, but basically the browsersupport for ES6-features & inline react/vue components is there.
-
-
+It's time to reduce clutter (es6 + devtools with builtin webservers are here).
