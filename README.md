@@ -60,3 +60,18 @@ The time is ripe for in-browser webdevelopment:
 * api responses can be easily mocked or requested remotely
 
 > It goes without saying that this doesn't apply for people who got emotionally or financially attached to their current tools & stacks.
+
+## How to develop locally?
+
+Simple create an Overrides-directory with projects, for example on a chrome book
+
+    hit ctrl-t to start a terminal
+    > shell 
+    $ cd Downloads
+    $ mkdir Overrides
+    $ cd Overrides
+    $ mkdir myproject.com
+
+> Now add 'Overrides' as the overrides folder, and type `https://myproject.com` and voila..it serves the webpage over https!
+
+<img src="https://raw.githubusercontent.com/coderofsalvation/load.js/master/devtools.png"/>
