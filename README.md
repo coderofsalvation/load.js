@@ -35,11 +35,11 @@ Loading the html-file without the `?flag` (or running `load.cmd('')`) will load 
 
 ## Install
 
-Just save [load.js](https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js) to a directory, or run:
+Just save [load.js](https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js) to a directory, or run this in the terminal:
 
-$ wget https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js
+    $ wget https://raw.githubusercontent.com/coderofsalvation/load.js/master/load.js
 
-And add a `index.html` like show above
+And add `index.html` like shown above
 
 ## Extending 
 
