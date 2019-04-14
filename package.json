@@ -1,6 +1,6 @@
 {
   "name": "loaddotjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Javascript bundler & code-splitter in the browser #microstack",
   "main": "load.js",
   "scripts": {

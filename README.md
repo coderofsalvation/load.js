@@ -18,7 +18,7 @@ Javascript bundler & code-splitter in the browser #microstack
                     "https://unpkg.com/http-vue-loader@1.3.4/src/httpVueLoader.js",
                     "https://unpkg.com/photoswipe@4.1.3/dist/default-skin/default-skin.css",
                 ],'/js/bundle.js') 
-                .then( () => load(["/js/main.js"]) ) 
+                .then( () => load(["/js/main.js"]) )
                 .catch( console.error )
             </script>
           </body>
@@ -51,6 +51,7 @@ Developers can add tabs to trigger other tools, tests or actions like so:
 
 The time is ripe for in-browser webdevelopment:
 
+* more control over js includes (load analytics after first meaningful frame etc)
 * es6 is supported in current browsers 
 * chrome devtools allows serving gitrepositories locally using 'overrides'
 * javascript modules work in the browser
