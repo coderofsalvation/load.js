@@ -1,0 +1,19 @@
+{
+  "name": "load.js",
+  "version": "1.0.1",
+  "description": "Javascript bundler & code-splitter in the browser #microstack",
+  "main": "load.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderofsalvation/load.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/load.js/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/load.js#readme"
+}
