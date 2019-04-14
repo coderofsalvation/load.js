@@ -72,6 +72,6 @@ Simple create an Overrides-directory with projects, for example on a chrome book
     $ cd Overrides
     $ mkdir myproject.com
 
-> Now add 'Overrides' as the overrides folder, and type `https://myproject.com` and voila..it serves the webpage over https!
+> Now add 'Overrides' as the overrides folder, and type `https://myproject.com` and voila..a free IDE editor + it serves the webpage over https!
 
 <img src="https://raw.githubusercontent.com/coderofsalvation/load.js/master/devtools.png"/>
